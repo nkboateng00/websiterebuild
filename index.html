@@ -4,8 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Website Remake nk x pk</title>
-  <link rel="stylesheet" href="style.css"/>
-  <script src="script.js"></script>
+  <link rel="stylesheet" href="/websiterebuild/style.css"/>
 </head>
 <body>
 
@@ -15,11 +14,151 @@
       <div class="logo">mNotify<span>Interns</span></div>
       <ul class="navbar" id="navbar">
         <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
         <li><a href="#">Solutions</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
       </ul>
-      <button class="menu-toggle" id="menu-toggle">☰</butt>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+</div>
+</nav>
 
+<!-- Hero Section -->
+<section id="hero" class="hero">
+  <div class="container">
+    <div class="hero-text">
+      <h1><strong>Welcome to mNotify AI </strong></h1>
+      <h2><span id="typed"></span></h2>
+      <p>We provide cutting-edge AI solutions to accelerate your business growth and transform your operational landscape for the digital future.</p>
+      <a href="#services" class="hero-button">Our Services</a>
+    </div>
+    <div class="hero-image-container">
+      <img src="/websiterebuild/images/mnotify logo.jpg" 
+        alt="AI chip technology" />
+    </div>
+  </div>
+</section>
+
+<!--Services Section-->
+<div class="services-section" id="services">
+    <h1 class="services-header">Our Services</h1>
+    <div class="card-container">
+  <div class="card">
+    <img src="/websiterebuild/images/round-icons-QWsSCYFZlGc-unsplash.png" alt="Image 1">
+    <div class="card-content">
+      <h2 class="card-title">AI Education and Training</h2>
+      <p class="card-text">Empowering your team with the knowledge to leverage AI tools effectively.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="/websiterebuild/images/muhammad-noor-ridho-aoVaOzzdutk-unsplash.jpg" alt="Image 2">
+    <div class="card-content">
+      <h2 class="card-title">AI Consultancy</h2>
+      <p class="card-text">Strategic guidance to integrate AI into your business model for maximum impact.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="/websiterebuild/images/mNotify.png" alt="Image 3">
+    <div class="card-content">
+      <h2 class="card-title">Custom AI Solutions</h2>
+      <p class="card-text">Developing bespoke AI-powered applications tailored to your unique challenges.</p>
+    </div>
+  </div>
+</div>
+
+  <div class="join-section-card">
+  <p>
+    Join us in the journey of driving AI for Growth and transforming the future of African businesses with AI.
+  </p>
+  <a href="#" class="button">Get Started</a>
+</div>
+
+<div class="about-section">
+  <h1>About mNotify AI</h1>
+  <p>mNotify AI is at the forefront of the artificial intelligence revolution in Africa. We are a dedicated 
+    team of data scientists, engineers, and strategists passionate about harnessing the power of AI to solve complex
+     problems and create sustainable growth for African enterprises.<br><br>Our mission is to democratize access to 
+     world-class AI technologies, fostering innovation and building a vibrant ecosystem of AI-driven businesses 
+     across the continent.</p>
+</div>
+
+<div class="contact-us-section">
+  <h1>Get in Touch with mNotify AI </h1>
+  <p>Ready to supercharge your business with AI? We are here to help you navigate the world of artificial 
+    intelligence. Send us a message to start the conversation.</p>
+  <div class="contact-form">
+  <h2>Contact Us</h2>
+  <form action="https://example.com/submit" method="POST">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name..." required>
+    </div>
     
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email..." required>
+    </div>
+    
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+    </div>
+    
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+</div>
+<footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>mNotify AI</h4>
+                    <p>Pioneering the future of business with intelligent solutions.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> mNotify AI. All Rights Reserved.</p>
+                <script>
+                    document.getElementById('current-year').textContent = new Date().getFullYear();
+                </script>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
+<script>
+  new TypeIt("#typed", {
+    strings: ["AI for Growth in Accra", "AI for Growth in Ghana", "AI for Growth in Africa"],
+    speed: 60,
+    breakLines: false,
+    loop: true,
+    deleteSpeed: 40,
+    waitUntilVisible: true
+  }).go();
+</script>
+</body>
+</html>
