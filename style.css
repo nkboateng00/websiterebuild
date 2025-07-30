@@ -183,7 +183,197 @@ main {
 }
 
 .services-header {
-    font-size: 32px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #F7921C;
+}
+
+.card-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    width: 400px;
+    height: 450px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.card-title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+/* Work Process Section */
+.workbench-wrapper {
+    max-width: 1200px;
+    max-height: 1000px;
+    padding: 20px 60px 20px 60px;
+    margin: 0 auto;
+}
+
+.headline-dynamo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff8c00;
+    margin-bottom: 10px;
+}
+
+.vermillion-accent {
+  display: none;
+}
+
+.chevron-sequence {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.workflow-segment {
+    position: relative;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    flex: 1;
+    max-width: 400px;
+}
+
+.iron-phase {
+    background-color: #ff8c00;
+    clip-path: polygon(0 0, calc(100% - 50px) 0, 100% 50%, calc(100% - 50px) 100%, 0 100%);
+    padding-right: 80px;
+    color: white;
+    z-index: 3;
+    margin-right: -20px;
+}
+
+.crimson-phase {
+    background-color: white;
+    color: #333;
+    clip-path: polygon(50px 0, calc(100% - 50px) 0, 100% 50%, calc(100% - 50px) 100%, 50px 100%, 0 50%);
+    margin-left: -70px;
+    margin-right: -50px;
+    padding-left: 100px;
+    padding-right: 80px;
+    border: 2px solid #ff8c00;
+    z-index: 2;
+}
+
+.ruby-phase {
+    background-color: #ff8c00;
+    clip-path: polygon(50px 0, 100% 0, 100% 100%, 0 100%, 0 50%);
+    margin-left: -70px;
+    padding-left: 100px;
+    color: white;
+    z-index: 1;
+}
+
+.numeric-badge {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 4rem;
+    font-weight: bold;
+    opacity: 0.3;
+}
+
+.glyph-display {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    fill: currentColor;
+}
+
+.mission-label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.narrative-chunk {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    opacity: 0.9;
+    max-width: 200px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .chevron-sequence {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .workflow-segment {
+        clip-path: none;
+        margin: 0;
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 100%;
+    }
+    
+    .numeric-badge {
+        position: relative;
+        top: auto;
+        right: auto;
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .headline-dynamo {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+/* Team Section */
+.team-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.team-header {
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 40px;
     color: #F7921C;
@@ -236,6 +426,7 @@ main {
     line-height: 1.5;
 }
 
+
 /* Join Section Card */
 .join-section-card {
     background: linear-gradient(135deg, #F7921C, #F26A21);
@@ -273,28 +464,29 @@ main {
 
 /* About Section */
 .about-section {
-    padding: 80px 20px;
+    padding: 80px 20px 80px 20px;
     background-color: #fff;
     text-align: center;
 }
 
 .about-section h1 {
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 30px;
     color: #F7921C;
 }
 
 .about-section p {
-    font-size: 18px;
+    font-size: 25px;
     color: #333;
     max-width: 900px;
     margin: 0 auto;
     line-height: 1.8;
+    text-align: justify;
 }
 
 /* Contact Us Section */
 .contact-us-section {
-    padding: 80px 20px;
+    padding: 60px 20px 30px 20px;;
     background-color: #f5f5f5;
     text-align: center;
 }
@@ -316,7 +508,7 @@ main {
 
 .contact-form {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
     background: #fff;
     padding: 40px;
     border-radius: 12px;
@@ -383,7 +575,7 @@ main {
 .footer {
     background-color: #1E2A4A;
     color: #aab2c7;
-    padding: 80px 20px 30px 20px;
+    padding: 50px 20px 30px 20px;
 }
 
 .footer-grid {
@@ -547,7 +739,7 @@ html {
     margin-top: 20px;
 }
 :root {
-  --primary: #f97316;
+  --primary: #f7921c;
   --bg: #ffffff;
   --card-bg: #f9fafb;
   --text-dark: #1e2937;
@@ -631,7 +823,7 @@ body {
 }
 
 .icon-circle.alt {
-  background: #ea580c;
+  background: #f7921c;
 }
 
 .hover-card h3 {
@@ -787,130 +979,4 @@ body {
   100% {
     background-position: 0% 50%;
   }
-}
-.workbench-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.headline-dynamo {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #ff8c00;
-    margin-bottom: 10px;
-}
-
-.vermillion-accent {
-  display: none;
-}
-
-.chevron-sequence {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0;
-    margin-top: 40px;
-    margin-bottom: 100px;
-}
-
-.workflow-segment {
-    position: relative;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    padding: 30px;
-    flex: 1;
-    max-width: 400px;
-}
-
-.iron-phase {
-    background-color: #ff8c00;
-    clip-path: polygon(0 0, calc(100% - 50px) 0, 100% 50%, calc(100% - 50px) 100%, 0 100%);
-    padding-right: 80px;
-    color: white;
-    z-index: 3;
-    margin-right: -20px;
-}
-
-.crimson-phase {
-    background-color: white;
-    color: #333;
-    clip-path: polygon(50px 0, calc(100% - 50px) 0, 100% 50%, calc(100% - 50px) 100%, 50px 100%, 0 50%);
-    margin-left: -70px;
-    margin-right: -50px;
-    padding-left: 100px;
-    padding-right: 80px;
-    border: 2px solid #ff8c00;
-    z-index: 2;
-}
-
-.ruby-phase {
-    background-color: #ff8c00;
-    clip-path: polygon(50px 0, 100% 0, 100% 100%, 0 100%, 0 50%);
-    margin-left: -70px;
-    padding-left: 100px;
-    color: white;
-    z-index: 1;
-}
-
-.numeric-badge {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 4rem;
-    font-weight: bold;
-    opacity: 0.3;
-}
-
-.glyph-display {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 20px;
-    fill: currentColor;
-}
-
-.mission-label {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.narrative-chunk {
-    font-size: 0.95rem;
-    line-height: 1.4;
-    opacity: 0.9;
-    max-width: 200px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .chevron-sequence {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .workflow-segment {
-        clip-path: none;
-        margin: 0;
-        padding: 30px;
-        border-radius: 10px;
-        max-width: 100%;
-    }
-    
-    .numeric-badge {
-        position: relative;
-        top: auto;
-        right: auto;
-        font-size: 2rem;
-        margin-bottom: 10px;
-    }
-    
-    .headline-dynamo {
-        font-size: 2rem;
-        text-align: center;
-    }
 }
