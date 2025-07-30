@@ -300,7 +300,7 @@ main {
 
 .ruby-phase {
     background-color: #ff8c00;
-    clip-path: polygon(50px 0, 100% 0, 100% 100%, 0 100%, 0 50%);
+    clip-path:polygon(50px 0, calc(100% - 50px) 0, 100% 50%, calc(100% - 50px) 100%, 50px 100%, 0 50%);
     margin-left: -70px;
     padding-left: 100px;
     color: white;
