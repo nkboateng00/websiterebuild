@@ -177,7 +177,7 @@ main {
 
 /* Services Section */
 .services-section {
-    padding: 50px 20px 50px 20px;
+    padding:80px 20px 50px 20px;
     background-color: #f9f9f9;
     text-align: center;
 }
@@ -368,7 +368,7 @@ main {
 
 /* Team Section */
 .team-section {
-    padding: 5px 20px;
+    padding: 80px 20px 50px 20px;
     background-color: #f9f9f9;
     text-align: center;
 }
@@ -432,7 +432,7 @@ main {
 .join-section-card {
     background: linear-gradient(135deg, #F7921C, #F26A21);
     color: white;
-    padding: 40px;
+    padding: 80px 20px 50px 20px;
     border-radius: 12px;
     text-align: center;
     margin: 40px auto;
@@ -465,37 +465,85 @@ main {
 
 /* About Section */
 .about-section {
-    padding: 80px 20px 80px 20px;
-    background-color: #fff;
+    padding: 80px 0 80px 0;
+    background-color: #f9f9f9;
     text-align: center;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%); 
 }
 
-.about-section h1 {
+.about-text h1 {
     font-size: 40px;
     margin-bottom: 30px;
     color: #F7921C;
 }
 
 .about-section p {
-    font-size: 25px;
+    font-size: 20px;
     color: #333;
     max-width: 900px;
     margin: 0 auto;
     line-height: 1.8;
-    text-align: justify;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  padding:50px 0px 50px 0px;
+}
+
+.about-text {
+  flex: 1 1 55%;
+  text-align: justify;
+}
+
+.about-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    flex: 1 1 100%;
+  }
+
+  .about-image {
+    flex: 1 1 100%;
+  }
 }
 
 /* Contact Us Section */
 .contact-us-section {
-    padding: 40px 20px 40px 20px;;
-    background-color: #f5f5f5;
+    background-color: #f9f9f9;
     text-align: center;
+    padding: 80px 0 50px 0;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%); 
 }
 
 .contact-us-section h1 {
     font-size: 36px;
     margin-bottom: 20px;
     color: #F7921C;
+    padding: 0 20px;
 }
 
 .contact-us-section > p {
@@ -680,7 +728,7 @@ main {
     
     .join-section-card {
         margin: 20px;
-        padding: 30px 20px;
+        padding: 80px 20px 50px 20px;
     }
     
     .contact-form {
@@ -739,6 +787,12 @@ html {
 .mt-20 {
     margin-top: 20px;
 }
+
+.full-width {
+    width: 100vw; /* Full viewport width */
+    margin-left: calc(-50vw + 50%); /* Centers while extending to edges */
+}
+
 :root {
   --primary: #f7921c;
   --bg: #ffffff;
@@ -751,7 +805,7 @@ html {
 .nkcontainer {
   max-width: 1200px;
   margin: auto;
-  padding: 40px 20px;
+  padding: 80px 20px 50px 20px;
 }
 .industry-title {
   text-align: center;
@@ -895,7 +949,9 @@ html {
 /* About Us Section */
 #about-us {
   background-color: var(--bg);
-  padding: 80px 20px;
+  padding: 80px 0 50px 0;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%); 
 }
 
 .about-content {
