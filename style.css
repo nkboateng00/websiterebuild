@@ -788,3 +788,129 @@ body {
     background-position: 0% 50%;
   }
 }
+.workbench-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.headline-dynamo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff8c00;
+    margin-bottom: 10px;
+}
+
+.vermillion-accent {
+  display: none;
+}
+
+.chevron-sequence {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.workflow-segment {
+    position: relative;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    flex: 1;
+    max-width: 400px;
+}
+
+.iron-phase {
+    background-color: #ff8c00;
+    clip-path: polygon(0 0, calc(100% - 50px) 0, 100% 50%, calc(100% - 50px) 100%, 0 100%);
+    padding-right: 80px;
+    color: white;
+    z-index: 3;
+    margin-right: -20px;
+}
+
+.crimson-phase {
+    background-color: white;
+    color: #333;
+    clip-path: polygon(50px 0, calc(100% - 50px) 0, 100% 50%, calc(100% - 50px) 100%, 50px 100%, 0 50%);
+    margin-left: -70px;
+    margin-right: -50px;
+    padding-left: 100px;
+    padding-right: 80px;
+    border: 2px solid #ff8c00;
+    z-index: 2;
+}
+
+.ruby-phase {
+    background-color: #ff8c00;
+    clip-path: polygon(50px 0, 100% 0, 100% 100%, 0 100%, 0 50%);
+    margin-left: -70px;
+    padding-left: 100px;
+    color: white;
+    z-index: 1;
+}
+
+.numeric-badge {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 4rem;
+    font-weight: bold;
+    opacity: 0.3;
+}
+
+.glyph-display {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    fill: currentColor;
+}
+
+.mission-label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.narrative-chunk {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    opacity: 0.9;
+    max-width: 200px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .chevron-sequence {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .workflow-segment {
+        clip-path: none;
+        margin: 0;
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 100%;
+    }
+    
+    .numeric-badge {
+        position: relative;
+        top: auto;
+        right: auto;
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .headline-dynamo {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
