@@ -124,7 +124,7 @@ main {
     justify-content: center;
     min-height: 90vh;
     color: white;
-    background: url('/websiterebuild/images/steve-johnson-_0iV9LmPDn0-unsplash.jpg') center/cover no-repeat;
+    background: url('/images/steve-johnson-_0iV9LmPDn0-unsplash.jpg') center/cover no-repeat;
     position: relative;
     scroll-margin-top: 80px;
 }
