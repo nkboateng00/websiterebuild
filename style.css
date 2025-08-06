@@ -144,7 +144,6 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin-left: 40px;
     position: relative;
     z-index: 2;
 }
@@ -1459,3 +1458,4 @@ html {
                 font-size: 14px;
             }
         }
+
