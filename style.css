@@ -150,7 +150,10 @@ main {
 
 .hero-text {
     flex: 1 1 700px;
-    padding: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 .hero-text h1 {
@@ -251,8 +254,7 @@ main {
 }
 
 .card-content {
-    padding: 20px;
-    text-align: left;
+    navigation: empty;
 }
 
 .card-title {
@@ -427,6 +429,7 @@ main {
 }
 
 .about-section p {
+    padding-left: 10px;
     font-size: 20px;
     color: #333;
     max-width: 900px;
@@ -456,7 +459,7 @@ main {
 }
 
 .about-image img {
-    width: 100%;
+    width: 93%;
     max-width: 800px;
     height: auto;
     border-radius: 20px;
@@ -860,7 +863,9 @@ main {
     }
 
     .join-section-card {
-        padding: 60px 20px !important;
+        width: 93%;
+        padding: 60px 20px ;
+        margin: 0 auto !important;
     }
 
     .about-section {
@@ -1062,7 +1067,10 @@ main {
         font-size: 28px;
     }
 
-    .about-section h1,
+    .about-section h1{
+        font-size: 28px;
+        text-align: center;
+    }
     .contact-us-section h1 {
         font-size: 28px;
     }
@@ -1458,4 +1466,3 @@ html {
                 font-size: 14px;
             }
         }
-
